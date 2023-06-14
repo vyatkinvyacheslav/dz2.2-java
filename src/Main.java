@@ -3,28 +3,27 @@
 public class Main {
     public static void main(String[] args) {
 
-        int a = 200;//начальный баланс
-        int b = 700; //сумма пополнения
-        int x = b / 10;  //начиленный бонус
-        int y;
+        int start_balance = 54;//начальный баланс
+        int refill = 1_200; //сумма пополнения
+        int bonus = refill / 10;  //начиленный бонус
+        int finish_balance;
 
 
-        System.out.println("ваш начальный баланс" + " = " + a);
-        System.out.println("сумма пополения" + " = " + b);
+        System.out.println("ваш начальный баланс" + " = " + start_balance);
+        System.out.println("сумма пополения" + " = " + refill);
 
 
-        if (b >= 1000) {
-            System.out.println("ваш бонус" + " = " + x);
-            y = a+b+x;
-            System.out.println("ваш итоговый баланс" + " = " + y);
+        if (refill >= 1000) {
+            System.out.println("ваш бонус" + " = " + bonus);
+            finish_balance = start_balance + refill + bonus;
+            System.out.println("ваш итоговый баланс" + " = " + finish_balance);
 
         } else {
             System.out.println("ваш бонус = 0");
-            y = a+b;
-            System.out.println("ваш итоговый баланс" + " = " + y);
+            finish_balance = start_balance + refill;
+            System.out.println("ваш итоговый баланс" + " = " + finish_balance);
 
         }
-
 
 
     }
