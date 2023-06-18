@@ -3,25 +3,25 @@
 public class Main {
     public static void main(String[] args) {
 
-        int start_balance = 54;//начальный баланс
+        int startBalance = 54;//начальный баланс
         int refill = 1_200; //сумма пополнения
         int bonus = refill / 10;  //начиленный бонус
-        int finish_balance;
+        int finishBalance;
 
 
-        System.out.println("ваш начальный баланс" + " = " + start_balance);
+        System.out.println("ваш начальный баланс" + " = " + startBalance);
         System.out.println("сумма пополения" + " = " + refill);
 
 
         if (refill >= 1000) {
             System.out.println("ваш бонус" + " = " + bonus);
-            finish_balance = start_balance + refill + bonus;
-            System.out.println("ваш итоговый баланс" + " = " + finish_balance);
+            finishBalance = startBalance + refill + bonus;
+            System.out.println("ваш итоговый баланс" + " = " + finishBalance);
 
         } else {
             System.out.println("ваш бонус = 0");
-            finish_balance = start_balance + refill;
-            System.out.println("ваш итоговый баланс" + " = " + finish_balance);
+            finishBalance = startBalance + refill;
+            System.out.println("ваш итоговый баланс" + " = " + finishBalance);
 
         }
 
